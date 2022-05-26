@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		4BBFE270283A21A8006EAD8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE26F283A21A8006EAD8B /* AppDelegate.swift */; };
 		4BBFE272283A21A8006EAD8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE271283A21A8006EAD8B /* SceneDelegate.swift */; };
-		4BBFE274283A21A8006EAD8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE273283A21A8006EAD8B /* ViewController.swift */; };
 		4BBFE277283A21A8006EAD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFE275283A21A8006EAD8B /* Main.storyboard */; };
 		4BBFE279283A21AA006EAD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFE278283A21AA006EAD8B /* Assets.xcassets */; };
 		4BBFE27C283A21AA006EAD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFE27A283A21AA006EAD8B /* LaunchScreen.storyboard */; };
+		4BBFE284283A23C3006EAD8B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE283283A23C3006EAD8B /* MainTableViewController.swift */; };
+		4BBFE28B283A24D9006EAD8B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE28A283A24D9006EAD8B /* DetailsViewController.swift */; };
+		4BBFE292283A402C006EAD8B /* DotaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE291283A402C006EAD8B /* DotaTableViewCell.swift */; };
+		4BBFE295283D254E006EAD8B /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE294283D254D006EAD8B /* Hero.swift */; };
+		4BBFE297283D47F2006EAD8B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFE296283D47F2006EAD8B /* NetworkManager.swift */; };
+		D69D081FD950EF7D513A127F /* Pods_HW_2_11_Alamofire_Dota_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B58769EB6D424AD553A536 /* Pods_HW_2_11_Alamofire_Dota_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BBFE26C283A21A8006EAD8B /* HW.2.11.Alamofire(Dota).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW.2.11.Alamofire(Dota).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBFE26F283A21A8006EAD8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BBFE271283A21A8006EAD8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4BBFE273283A21A8006EAD8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4BBFE276283A21A8006EAD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BBFE278283A21AA006EAD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BBFE27B283A21AA006EAD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BBFE27D283A21AA006EAD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBFE283283A23C3006EAD8B /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		4BBFE28A283A24D9006EAD8B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4BBFE291283A402C006EAD8B /* DotaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaTableViewCell.swift; sourceTree = "<group>"; };
+		4BBFE294283D254D006EAD8B /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		4BBFE296283D47F2006EAD8B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7E7224524C2ED9C806F2E1AC /* Pods-HW.2.11.Alamofire(Dota).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.2.11.Alamofire(Dota).debug.xcconfig"; path = "Target Support Files/Pods-HW.2.11.Alamofire(Dota)/Pods-HW.2.11.Alamofire(Dota).debug.xcconfig"; sourceTree = "<group>"; };
+		93056651E6077AA559A8B05C /* Pods-HW.2.11.Alamofire(Dota).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.2.11.Alamofire(Dota).release.xcconfig"; path = "Target Support Files/Pods-HW.2.11.Alamofire(Dota)/Pods-HW.2.11.Alamofire(Dota).release.xcconfig"; sourceTree = "<group>"; };
+		A3B58769EB6D424AD553A536 /* Pods_HW_2_11_Alamofire_Dota_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_2_11_Alamofire_Dota_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69D081FD950EF7D513A127F /* Pods_HW_2_11_Alamofire_Dota_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AA73E2A8DE83EA380E17B73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B58769EB6D424AD553A536 /* Pods_HW_2_11_Alamofire_Dota_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BBFE263283A21A8006EAD8B = {
 			isa = PBXGroup;
 			children = (
 				4BBFE26E283A21A8006EAD8B /* HW.2.11.Alamofire(Dota) */,
 				4BBFE26D283A21A8006EAD8B /* Products */,
+				EE02A1866F74254E9DA0E7E8 /* Pods */,
+				3AA73E2A8DE83EA380E17B73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,77 @@
 		4BBFE26E283A21A8006EAD8B /* HW.2.11.Alamofire(Dota) */ = {
 			isa = PBXGroup;
 			children = (
-				4BBFE26F283A21A8006EAD8B /* AppDelegate.swift */,
-				4BBFE271283A21A8006EAD8B /* SceneDelegate.swift */,
-				4BBFE273283A21A8006EAD8B /* ViewController.swift */,
-				4BBFE275283A21A8006EAD8B /* Main.storyboard */,
-				4BBFE278283A21AA006EAD8B /* Assets.xcassets */,
-				4BBFE27A283A21AA006EAD8B /* LaunchScreen.storyboard */,
-				4BBFE27D283A21AA006EAD8B /* Info.plist */,
+				4BBFE28C283A2FF4006EAD8B /* Cell */,
+				4BBFE288283A243D006EAD8B /* Model */,
+				4BBFE286283A240D006EAD8B /* ViewControllers */,
+				4BBFE285283A23DC006EAD8B /* Storyboards */,
+				4BBFE289283A244F006EAD8B /* NetworkManager */,
+				4BBFE287283A242A006EAD8B /* Other */,
 			);
 			path = "HW.2.11.Alamofire(Dota)";
+			sourceTree = "<group>";
+		};
+		4BBFE285283A23DC006EAD8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE27A283A21AA006EAD8B /* LaunchScreen.storyboard */,
+				4BBFE275283A21A8006EAD8B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4BBFE286283A240D006EAD8B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE283283A23C3006EAD8B /* MainTableViewController.swift */,
+				4BBFE28A283A24D9006EAD8B /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4BBFE287283A242A006EAD8B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE26F283A21A8006EAD8B /* AppDelegate.swift */,
+				4BBFE271283A21A8006EAD8B /* SceneDelegate.swift */,
+				4BBFE27D283A21AA006EAD8B /* Info.plist */,
+				4BBFE278283A21AA006EAD8B /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4BBFE288283A243D006EAD8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE294283D254D006EAD8B /* Hero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BBFE289283A244F006EAD8B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE296283D47F2006EAD8B /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		4BBFE28C283A2FF4006EAD8B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFE291283A402C006EAD8B /* DotaTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE02A1866F74254E9DA0E7E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E7224524C2ED9C806F2E1AC /* Pods-HW.2.11.Alamofire(Dota).debug.xcconfig */,
+				93056651E6077AA559A8B05C /* Pods-HW.2.11.Alamofire(Dota).release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BBFE280283A21AA006EAD8B /* Build configuration list for PBXNativeTarget "HW.2.11.Alamofire(Dota)" */;
 			buildPhases = (
+				E4BC6BD6B98ADEBCA1158915 /* [CP] Check Pods Manifest.lock */,
 				4BBFE268283A21A8006EAD8B /* Sources */,
 				4BBFE269283A21A8006EAD8B /* Frameworks */,
 				4BBFE26A283A21A8006EAD8B /* Resources */,
+				23D6376375666D21D2408273 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +220,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23D6376375666D21D2408273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW.2.11.Alamofire(Dota)/Pods-HW.2.11.Alamofire(Dota)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW.2.11.Alamofire(Dota)/Pods-HW.2.11.Alamofire(Dota)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HW.2.11.Alamofire(Dota)/Pods-HW.2.11.Alamofire(Dota)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BC6BD6B98ADEBCA1158915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HW.2.11.Alamofire(Dota)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BBFE268283A21A8006EAD8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BBFE274283A21A8006EAD8B /* ViewController.swift in Sources */,
 				4BBFE270283A21A8006EAD8B /* AppDelegate.swift in Sources */,
+				4BBFE284283A23C3006EAD8B /* MainTableViewController.swift in Sources */,
 				4BBFE272283A21A8006EAD8B /* SceneDelegate.swift in Sources */,
+				4BBFE297283D47F2006EAD8B /* NetworkManager.swift in Sources */,
+				4BBFE292283A402C006EAD8B /* DotaTableViewCell.swift in Sources */,
+				4BBFE28B283A24D9006EAD8B /* DetailsViewController.swift in Sources */,
+				4BBFE295283D254E006EAD8B /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +417,7 @@
 		};
 		4BBFE281283A21AA006EAD8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7224524C2ED9C806F2E1AC /* Pods-HW.2.11.Alamofire(Dota).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +425,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGRG6HC2V6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW.2.11.Alamofire(Dota)/Info.plist";
+				INFOPLIST_FILE = "HW.2.11.Alamofire(Dota)/Other/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,12 +440,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4BBFE282283A21AA006EAD8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93056651E6077AA559A8B05C /* Pods-HW.2.11.Alamofire(Dota).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +454,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGRG6HC2V6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW.2.11.Alamofire(Dota)/Info.plist";
+				INFOPLIST_FILE = "HW.2.11.Alamofire(Dota)/Other/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +469,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
