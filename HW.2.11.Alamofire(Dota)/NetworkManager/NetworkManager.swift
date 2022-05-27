@@ -8,9 +8,6 @@
 import Foundation
 import Alamofire
 
-let urlHeroDota2 = "https://api.opendota.com/api/heroStats"
-let urlStart = "https://api.opendota.com"
-
 class NetworkManagerAlamofire {
     
     static let shared = NetworkManagerAlamofire()
@@ -35,40 +32,3 @@ class NetworkManagerAlamofire {
     }
 }
 
-class ImageManager {
-    
-    static var shared = ImageManager()
-
-    func fetchImage(from url: String?) -> Data? {
-        guard let stringURL = url else { return nil }
-        guard let imageURL = URL(string: stringURL) else { return nil }
-        return try? Data(contentsOf: imageURL)
-    }
-}
-
-//class NetworkManagerURLSession {
-//
-//    static let shared = NetworkManagerURLSession()
-//
-//    private init() {}
-//
-//    func fetchData(from urlString: String, with complition: @escaping ([Hero]) -> Void) {
-//
-//        guard let url = URL(string: urlString) else { return }
-//
-//        URLSession.shared.dataTask(with: url) { (data, _, error) in
-//            if let error = error { print(error); return }
-//            guard let data = data else { return }
-//            let jsonDecoder = JSONDecoder()
-//            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-//            do {
-//                let heroes = try jsonDecoder.decode([Hero].self, from: data)
-//                DispatchQueue.main.async {
-//                    complition(heroes)
-//                }
-//            } catch let jsonError {
-//                print(jsonError.localizedDescription)
-//            }
-//        }.resume()
-//    }
-//}

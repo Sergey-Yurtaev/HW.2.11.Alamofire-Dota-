@@ -19,23 +19,6 @@ struct Hero: Decodable {
     let attackRange: Int?
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* JSON
 "id":1,
  "name":"npc_dota_hero_antimage",

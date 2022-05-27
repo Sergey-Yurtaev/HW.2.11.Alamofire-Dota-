@@ -10,7 +10,7 @@ import Alamofire
 
 class DetailsViewController: UIViewController {
     // MARK: IBOutlets
-    @IBOutlet weak var fullImageView: UIImageView!
+    @IBOutlet weak var fullImageView: ImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var rolesLabel: UILabel!
     @IBOutlet weak var specialityLabel: UILabel!
@@ -42,12 +42,7 @@ class DetailsViewController: UIViewController {
     }
     
     func setImage() {
-        DispatchQueue.global().async {
-            guard let imageData = ImageManager.shared.fetchImage(from: urlStart + (self.hero.img ?? "")) else { return }
-            DispatchQueue.main.async {
-                self.fullImageView.image = UIImage(data: imageData)
-            }
-        }
+        fullImageView.fetchImage(from: "https://api.opendota.com" + (hero.img ?? ""))
         fullImageView.layer.cornerRadius = fullImageView.bounds.width / 2
     }
 }

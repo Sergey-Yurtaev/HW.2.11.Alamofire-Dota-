@@ -10,6 +10,7 @@ import UIKit
 class MainTableViewController: UITableViewController {
     
     //MARK: Private properties
+    let urlHeroDota2 = "https://api.opendota.com/api/heroStats"
     private var heroes: [Hero] = []
     
     // MARK: - UIViewController Methods
@@ -18,9 +19,14 @@ class MainTableViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         setupNavigationBar()
-        setNetworkData()
         tableView.backgroundColor = .black
+        tableView.rowHeight = 100
         tableView.separatorStyle = .none // убираем разделительную линию
+        
+        NetworkManagerAlamofire.shared.fetchData(from: urlHeroDota2) { heroes in
+            self.heroes = heroes
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - Table view data source
@@ -32,15 +38,19 @@ class MainTableViewController: UITableViewController {
         heroes.count
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DotaTableViewCell
-        cell.set(object: heroes[indexPath.row], andAdditionalAddress: urlStart)
+        cell.set(object: heroes[indexPath.row], andAdditionalAddress: "https://api.opendota.com")
         
         return cell
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let hero = heroes[indexPath.row]
+        let detailVC = segue.destination as! DetailsViewController
+        detailVC.hero = hero
     }
     
     // MARK: - Private Methods
@@ -60,25 +70,7 @@ class MainTableViewController: UITableViewController {
             navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let hero = heroes[indexPath.row]
-        let detailVC = segue.destination as! DetailsViewController
-        detailVC.hero = hero
-    }
 }
 
-extension MainTableViewController {
-    private func setNetworkData() {
-        NetworkManagerAlamofire.shared.fetchData(from: urlHeroDota2) { heroes in
-            DispatchQueue.main.async { //обновляем интерфейс в основном потоке. (ассинхронно)
-                self.heroes = heroes
-                self.tableView.reloadData()
-            }
-        }
-    }
-}
 
 
