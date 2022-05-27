@@ -22,7 +22,7 @@ class ImageView: UIImageView {
         }
         
         // Если изображения в кеше нет, загружаем картинки из сети
-        ImageManager2.shared.getImage(from: imageURL) { (data, response) in
+        ImageManager.shared.getImage(from: imageURL) { (data, response) in
             DispatchQueue.main.async {
                 self.image = UIImage(data: data)
             }

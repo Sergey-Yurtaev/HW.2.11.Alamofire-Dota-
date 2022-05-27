@@ -8,9 +8,9 @@
 import Foundation
 
 
-class ImageManager2 {
+class ImageManager {
     
-    static var shared = ImageManager2()
+    static var shared = ImageManager()
     
     private init() {}
     
