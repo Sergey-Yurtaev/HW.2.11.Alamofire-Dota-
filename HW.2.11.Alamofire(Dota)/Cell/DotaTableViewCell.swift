@@ -32,7 +32,6 @@ class DotaTableViewCell: UITableViewCell {
         
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0))
         contentView.backgroundColor = #colorLiteral(red: 0.1157014468, green: 0.1229005504, blue: 0.1775156992, alpha: 0.8708246971)
-        
     }
     
     // MARK: - Public methods
