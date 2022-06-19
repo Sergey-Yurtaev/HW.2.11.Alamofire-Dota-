@@ -70,6 +70,10 @@ class MainTableViewController: UITableViewController {
             navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
+    
+    deinit {
+        print("MainTableViewController has been dealocated")
+    }
 }
 
 

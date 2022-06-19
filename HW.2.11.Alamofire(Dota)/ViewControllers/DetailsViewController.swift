@@ -45,4 +45,8 @@ class DetailsViewController: UIViewController {
         fullImageView.fetchImage(from: "https://api.opendota.com" + (hero.img ?? ""))
         fullImageView.layer.cornerRadius = fullImageView.bounds.width / 2
     }
+    
+    deinit {
+        print("DetailsViewController has been dealocated")
+    }
 }

@@ -18,7 +18,7 @@ class NetworkManagerAlamofire {
         
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-            
+        
         AF.request(urlString)
             .validate()
             .responseDecodable(of: [Hero].self, decoder: decoder) { dataResponse in
