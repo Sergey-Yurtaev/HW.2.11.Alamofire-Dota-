@@ -10,7 +10,7 @@ import UIKit
 class MainTableViewController: UITableViewController {
     
     //MARK: Private properties
-    let urlHeroDota2 = "https://api.opendota.com/api/heroStats"
+    private let urlHeroDota2 = "https://api.opendota.com/api/heroStats"
     private var heroes: [Hero] = []
     
     // MARK: - UIViewController Methods
@@ -23,9 +23,9 @@ class MainTableViewController: UITableViewController {
         tableView.rowHeight = 100
         tableView.separatorStyle = .none // убираем разделительную линию
         
-        NetworkManagerAlamofire.shared.fetchData(from: urlHeroDota2) { heroes in
-            self.heroes = heroes
-            self.tableView.reloadData()
+        NetworkManagerAlamofire.shared.fetchData(from: urlHeroDota2) { [weak self] heroes in
+            self?.heroes = heroes
+            self?.tableView.reloadData()
         }
     }
     
